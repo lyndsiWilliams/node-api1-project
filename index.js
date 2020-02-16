@@ -1,5 +1,7 @@
 // Import express
 const express = require('express');
+// Import cors
+const cors = require('cors');
 // Create server
 const server = express();
 // Create port
@@ -8,6 +10,7 @@ const port = 5000;
 server.listen(port, () => console.log(`\n** API on port ${port} \n`));
 // Middleware
 server.use(express.json());
+server.use(cors());
 // Server objects
 const Users = require('./data/db.js');
 
