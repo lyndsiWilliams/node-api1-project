@@ -5,7 +5,7 @@ const cors = require('cors');
 // Create server
 const server = express();
 // Create port
-const port = 5000;
+const port = 3000;
 // Tell server where to listen (port)
 server.listen(port, () => console.log(`\n** API on port ${port} \n`));
 // Middleware
